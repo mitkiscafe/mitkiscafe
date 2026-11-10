@@ -1,0 +1,37 @@
+{
+  "categories": [
+    { "name": "Hot Drinks" },
+    { "name": "Cold Drinks" },
+    { "name": "Snacks" },
+    { "name": "Soup" }
+  ],
+  "items": [
+    { "id": "special", "cat": "Hot Drinks", "name": "Mitki's Special Chai", "price": 15, "veg": true, "options": [{ "label": "Cup", "extra": 0 }, { "label": "Kulhad", "extra": 5 }] },
+    { "id": "adrak", "cat": "Hot Drinks", "name": "Adrak Chai", "price": 20, "veg": true, "options": [{ "label": "Cup", "extra": 0 }, { "label": "Kulhad", "extra": 5 }] },
+    { "id": "elaichi", "cat": "Hot Drinks", "name": "Elaichi Chai", "price": 20, "veg": true, "options": [{ "label": "Cup", "extra": 0 }, { "label": "Kulhad", "extra": 5 }] },
+    { "id": "masala", "cat": "Hot Drinks", "name": "Masala Chai", "price": 20, "veg": true, "options": [{ "label": "Cup", "extra": 0 }, { "label": "Kulhad", "extra": 5 }] },
+    { "id": "lemon", "cat": "Hot Drinks", "name": "Lemon Chai", "price": 20, "veg": true },
+    { "id": "lal", "cat": "Hot Drinks", "name": "Lal Chai", "price": 15, "veg": true },
+    { "id": "coffee", "cat": "Hot Drinks", "name": "Normal Coffee", "price": 25, "veg": true },
+    { "id": "hotchoc", "cat": "Hot Drinks", "name": "Hot Chocolate", "price": null, "veg": true },
+    { "id": "badam", "cat": "Hot Drinks", "name": "Badam Milk", "price": 60, "veg": true },
+    { "id": "coldcoffee", "cat": "Cold Drinks", "name": "Cold Coffee", "price": null, "veg": true },
+    { "id": "icedtea", "cat": "Cold Drinks", "name": "Iced Tea", "price": null, "veg": true },
+    { "id": "lemonsoda", "cat": "Cold Drinks", "name": "Lemon Soda", "price": null, "veg": true },
+    { "id": "masalacola", "cat": "Cold Drinks", "name": "Masala Cola", "price": null, "veg": true },
+    { "id": "bun", "cat": "Snacks", "name": "Bun Maska", "price": 25, "veg": true },
+    { "id": "bunomlette", "cat": "Snacks", "name": "Bun Omlette", "price": 40, "veg": false },
+    { "id": "fishfinger", "cat": "Snacks", "name": "Fish Finger (4 pc)", "price": 120, "veg": false },
+    { "id": "fishfry", "cat": "Snacks", "name": "Fish Fry (2 pc)", "price": 120, "veg": false },
+    { "id": "fries", "cat": "Snacks", "name": "French Fries", "price": 60, "veg": true, "options": [{ "label": "Salted", "extra": 0 }, { "label": "Peri Peri", "extra": 0 }] },
+    { "id": "eggchat", "cat": "Snacks", "name": "Egg Chat (with 2 eggs)", "price": 35, "veg": false },
+    { "id": "nuggets", "cat": "Snacks", "name": "Chicken Nuggets (5 pc)", "price": 60, "veg": false },
+    { "id": "chicken65", "cat": "Snacks", "name": "Chicken 65 (6 pc)", "price": 150, "veg": false },
+    { "id": "pcb", "cat": "Snacks", "name": "Potato Cheese Balls (4 pc)", "price": 60, "veg": true },
+    { "id": "sweetcorn", "cat": "Snacks", "name": "Sweet Corn", "price": null, "veg": true },
+    { "id": "chaana", "cat": "Snacks", "name": "Chaana Chat", "price": null, "veg": true },
+    { "id": "nachos", "cat": "Snacks", "name": "Cheezy Nachos", "price": null, "veg": true },
+    { "id": "chickensoup", "cat": "Soup", "name": "Chicken Hot & Sour Soup", "price": null, "veg": false },
+    { "id": "vegsoup", "cat": "Soup", "name": "Veg Hot & Sour Soup", "price": null, "veg": true }
+  ]
+}

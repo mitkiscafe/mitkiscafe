@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Mitki's Cafe</title>
+<link rel="icon" href="/logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="/logo.png" alt="Mitki's Cafe logo" width="92" height="92">
+    <div class="brand">
+      <h1>Mitki's Cafe</h1>
+      <p class="tag">With Mother's Love</p>
+      <p class="sub">Self service. Please give us 10-15 mins to get you the best.</p>
+    </div>
+  </div>
+  <div class="tiles" aria-hidden="true"></div>
+</header>
+
+<nav class="filters" aria-label="Menu sections">
+  <div class="wrap">
+    <div class="chips" id="chips"></div>
+    <label class="vegonly" for="vegOnly"><input type="checkbox" id="vegOnly"> Veg only</label>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="layout">
+    <div id="menu"><p class="empty-menu">Loading the menu…</p></div>
+
+    <aside class="cart" id="cart" aria-label="Your order">
+      <h2>Your order</h2>
+
+      <div class="track" id="track" hidden>
+        <p>Your order number is</p>
+        <p class="code" id="trackCode"></p>
+        <p class="state" id="trackState" role="status" aria-live="polite"></p>
+        <button class="sbtn quiet" id="newOrder" type="button" hidden>Start a new order</button>
+      </div>
+
+      <div id="checkout">
+        <p class="testbanner" id="testBanner" hidden>Test mode: no real payment is taken.</p>
+        <ul class="lines" id="lines"></ul>
+        <div class="total"><span>Total</span><span id="total">₹0</span></div>
+        <p class="fine">Prices in ₹. Tell us about any allergies in the note.</p>
+
+        <fieldset>
+          <legend class="field"><span>How will you have it?</span></legend>
+          <div class="seg">
+            <label for="modeDine"><input type="radio" name="mode" id="modeDine" value="Dine-in" checked><span>Dine-in</span></label>
+            <label for="modeTake"><input type="radio" name="mode" id="modeTake" value="Takeaway"><span>Takeaway</span></label>
+          </div>
+        </fieldset>
+        <label class="field" for="custName"><span>Your name (we call it out when ready)</span><input id="custName" type="text" maxlength="40" autocomplete="given-name" placeholder="e.g. Riya"></label>
+        <label class="field" for="tableNo" id="tableWrap"><span>Table number, if any</span><input id="tableNo" type="text" maxlength="10" inputmode="numeric" placeholder="e.g. 4"></label>
+        <label class="field" for="note"><span>Anything we should know?</span><textarea id="note" maxlength="200" placeholder="Less sugar, extra hot, no onion..."></textarea></label>
+
+        <div class="btns">
+          <button class="btn primary" id="pay" type="button" disabled>Pay</button>
+        </div>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<div class="wrap"><footer class="foot">Mitki's Cafe · Since 2026</footer></div>
+
+<button class="bar" id="bar" type="button" hidden>
+  <span id="barText">0 items</span>
+  <span class="go">View order →</span>
+</button>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="/customer.js"></script>
+</body>
+</html>

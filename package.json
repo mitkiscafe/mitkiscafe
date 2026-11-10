@@ -1,0 +1,11 @@
+{
+  "name": "mitkis-cafe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Online ordering and payment for Mitki's Cafe, with a live kitchen screen",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/run-tests.js"
+  }
+}
